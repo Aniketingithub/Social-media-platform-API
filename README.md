@@ -88,7 +88,7 @@ The Server will start running at the provided `Port number`.
     - Input: Title, Description
     - RETURN: Post-ID, Title, Description, Created Time(UTC).
    
-- DELETE `api/posts/{id}` would delete post with {id} created by the authenticated user.
+- DELETE `/api/posts/{id}` would delete post with {id} created by the authenticated user.
 
 - POST `/api/like/{id}` would like the post with {id} by the authenticated user.
 
