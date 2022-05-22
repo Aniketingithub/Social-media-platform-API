@@ -40,6 +40,10 @@ app.use("/api/unlike", unlikeRoute);
 app.use("/api/comment", commentRoute);
 app.use("/api/all_posts", allPostRoute);
 
+app.get("/", (req, res) => {
+   res.send("Created an API");
+});
+
 app.listen(process.env.PORT, () => {
    console.log(`Server running at ${process.env.PORT}`);
 });
