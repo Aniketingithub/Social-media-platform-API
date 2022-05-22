@@ -25,7 +25,7 @@ router.post("/", async (req, res) => {
 
       // store token in cookie
       res.cookie("jwt", token, {
-         expires: new Date(Date.now() + 600000),
+         expires: new Date(Date.now() + 604800000),         // expires in 1 week
          httpOnly: true,
       });
 
@@ -50,7 +50,7 @@ router.post("/register", async (req, res) => {
 
       // store token in cookies
       res.cookie("jwt", token, {
-         expires: new Date(Date.now() + 600000),
+         expires: new Date(Date.now() + 604800000),    // expires in 1 week
          httpOnly: true
       });
 
