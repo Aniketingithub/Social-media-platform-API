@@ -98,7 +98,7 @@ The Server will start running at the provided `Port number`.
     - Input: Comment
     - Return: Comment-ID
 
-- GET `api/posts/{id}` would return a single post with {id} populated with its number of likes and comments
+- GET `/api/posts/{id}` would return a single post with {id} populated with its number of likes and comments
 
 - GET `/api/all_posts` would return all posts created by authenticated user sorted by post time.
     - RETURN: For each post return the following values
