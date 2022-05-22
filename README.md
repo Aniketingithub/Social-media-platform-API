@@ -3,11 +3,11 @@
 
 A social media platform API which supports features like getting a user profile, follow a user, upload a post, delete a post, like a post, unlike a liked post, and comment on a post.
 
-- [Features](https://github.com/Aniketingithub/reunion-assignment-aniket/tree/master#features)
-- [Tech Stack Used](https://github.com/Aniketingithub/reunion-assignment-aniket/tree/master#tech-stack-used)
-- [Dependencies](https://github.com/Aniketingithub/reunion-assignment-aniket/tree/master#dependencies-used)
-- [Installation](https://github.com/Aniketingithub/reunion-assignment-aniket/tree/master#installation)
-- [API Endpoints](https://github.com/Aniketingithub/reunion-assignment-aniket/tree/master#api-endpoints)
+- [Features](https://github.com/Aniketingithub/reunion-assignment-aniket/tree/main#features)
+- [Tech Stack Used](https://github.com/Aniketingithub/reunion-assignment-aniket/tree/main#tech-stack-used)
+- [Dependencies](https://github.com/Aniketingithub/reunion-assignment-aniket/tree/main#dependencies-used)
+- [Installation](https://github.com/Aniketingithub/reunion-assignment-aniket/tree/main#installation)
+- [API Endpoints](https://github.com/Aniketingithub/reunion-assignment-aniket/tree/main#api-endpoints)
 
 ## Features
 
