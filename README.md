@@ -47,7 +47,7 @@ Create a directory in your local system and clone the repository.
 ```sh
 mkdir <dirname>
 cd <dirname>
-gh repo clone Aniketingithub/reunion-assignment-aniket
+gh repo clone Aniketingithub/Social-media-platform-API
 ```
 
 Install the required dependencies.
