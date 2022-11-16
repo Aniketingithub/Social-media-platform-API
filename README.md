@@ -8,7 +8,7 @@ A social media platform API which supports features like getting a user profile,
 - [Dependencies](https://github.com/Aniketingithub/reunion-assignment-aniket/tree/master#dependencies-used)
 - [Installation](https://github.com/Aniketingithub/reunion-assignment-aniket/tree/master#installation)
 - [API Endpoints](https://github.com/Aniketingithub/reunion-assignment-aniket/tree/master#api-endpoints)
-- [Hosted Link](https://github.com/Aniketingithub/reunion-assignment-aniket/tree/master#hosted-link)
+- [Hosted Link](https://github.com/Aniketingithub/Social-media-platform-API/tree/master#hosted-link)
 
 ## Features
 
