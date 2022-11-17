@@ -17,7 +17,7 @@ router.get("/:id", authenticate, async(req, res) => {
       };
       res.status(200).send(postDetails);
    } catch (error) {
-      
+      res.status(404).send(error)
    }
 });
 
@@ -32,7 +32,7 @@ router.post("/", authenticate, async (req, res) => {
    try {
       const user = await User.findById(userId);
       const post = await newPost.save();
-      console.log(post);
+      // console.log(post);
       await user.updateOne({$push: {posts: {Post_Id: post._id, Created_Time: post.createdAt}}});
       const obj = {
          "POST-ID": post._id,
@@ -51,10 +51,13 @@ router.post("/", authenticate, async (req, res) => {
 */
 router.delete("/:id", authenticate, async(req, res) => {
    try {
-      const postId = req.params.id;
-      const post = await Post.findById(postId);
-      if(!post) { return res.status(403).send("Post not found") };
+      const postId = req.params.id
+      const post = await Post.findById(postId)
+      const user = await User.findById(post.userid)
+      if(!post) { return res.status(403).send("Post not found") }
       await Post.deleteOne({_id: postId});
+      user.posts.splice(user.posts.findIndex(a => a.Post_Id === postId), 1)
+      await user.save()
       res.status(200).send(`post with ${postId} deleted successfully`);
    } catch (error) {
       res.status(500).json(error);

@@ -5,13 +5,13 @@ const authenticate = require("../middlewares/authenticate");
 
 /*
 - GET /api/all_posts would return all posts created by authenticated user sorted by post time.
-    - RETURN: For each post return the following values
-        - id: ID of the post
-        - title: Title of the post
-        - desc: Description of the post
-        - created_at: Date and time when the post was created
-        - comments: Array of comments, for the particular post
-        - likes: Number of likes for the particular post
+   - RETURN: For each post return the following values
+      - id: ID of the post
+      - title: Title of the post
+      - desc: Description of the post
+      - created_at: Date and time when the post was created
+      - comments: Array of comments, for the particular post
+      - likes: Number of likes for the particular post
 */
 
 router.get("/", authenticate, async (req, res) => {
@@ -24,10 +24,8 @@ router.get("/", authenticate, async (req, res) => {
       postArray.sort(function(a, b) {
          return a.createdAt - b.createdAt;
       });
-
       // An array of objects containing information about all posts of autjenticated user sorted by time.
       const result = [];
-
       // wait for all input promises to complete and returns a promise
       await Promise.all(postArray.map(async function(item, index) {
          try {
@@ -41,13 +39,13 @@ router.get("/", authenticate, async (req, res) => {
                "likes": post.likes.length
             };
             result.push(obj);
+            // console.log(result);
          } catch (error) {
-            res.status(500).send(error);
+            return res.status(500).send(error);
          }
       }));
       res.status(200).send(result);
    } catch (error) {
-      console.log(error);
       res.status(500).send(error);
    }
 });

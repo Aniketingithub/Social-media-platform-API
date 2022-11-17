@@ -44,6 +44,7 @@ app.get("/", (req, res) => {
    res.send("Created an API");
 });
 
-app.listen(process.env.PORT, () => {
+module.exports = app.listen(8080 || process.env.PORT, () => {
    console.log(`Server running at ${process.env.PORT}`);
 });
+

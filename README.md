@@ -8,6 +8,7 @@ A social media platform API which supports features like getting a user profile,
 - [Dependencies](https://github.com/Aniketingithub/reunion-assignment-aniket/tree/master#dependencies-used)
 - [Installation](https://github.com/Aniketingithub/reunion-assignment-aniket/tree/master#installation)
 - [API Endpoints](https://github.com/Aniketingithub/reunion-assignment-aniket/tree/master#api-endpoints)
+- [Hosted Link](https://github.com/Aniketingithub/Social-media-platform-API/tree/master#hosted-link)
 
 ## Features
 
@@ -108,3 +109,13 @@ The Server will start running at the provided `Port number`.
         - created_at: Date and time when the post was created
         - comments: Array of comments, for the particular post
         - likes: Number of likes for the particular post
+
+## Hosted Link
+```sh
+https://social-media-9vbv.onrender.com/
+```
+
+## Run the testcases
+```sh
+npm test
+```

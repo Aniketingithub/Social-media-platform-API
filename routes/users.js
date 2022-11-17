@@ -16,7 +16,7 @@ router.get("/", authenticate, (req, res) => {
       "No-of-followers": followers, 
       "No-of-followings": followings
    };
-   res.send(obj);
+   res.status(200).send(obj);
 });
 
 module.exports = router;
