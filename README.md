@@ -114,3 +114,7 @@ The Server will start running at the provided `Port number`.
 ```sh
 https://social-media-9vbv.onrender.com/
 ```
+## Run the testcases
+```sh
+npm test
+```
